@@ -48,18 +48,3 @@ const expected = (probability_variables: number[], probabilities: number[]) => {
 
   return result;
 };
-
-// const notReverceProb = (elementsObject, hitProperties) => {
-//   const values = Object.values(elementsObject);
-//   let sum = 0;
-//   for (let value in values) {
-//     sum += value;
-//   }
-//   const keys = Object.keys(elementsObject);
-//   let hits;
-//   for (let i in hitProperties) {
-//   }
-// };
-// // console.log(notReverceProb({"red": 3,"white": 2} , ["red", "red", "white"]));
-
-const repeatTry_test = repeatTry(4, 3, 1 / 6);
