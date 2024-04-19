@@ -1,4 +1,4 @@
-class Divisor {
+export class Divisor {
   num: number;
   constructor(num: number) {
     this.num = num;

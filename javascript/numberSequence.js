@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.geometric = exports.arithmetics = void 0;
 const arithmetics = (first, second, last) => {
     const difference = second - first;
     const sequences = [];
@@ -7,6 +9,7 @@ const arithmetics = (first, second, last) => {
     }
     return sequences;
 };
+exports.arithmetics = arithmetics;
 const geometric = (first, second, last) => {
     const difference = second / first;
     const terms = [];
@@ -15,3 +18,4 @@ const geometric = (first, second, last) => {
     }
     return terms;
 };
+exports.geometric = geometric;

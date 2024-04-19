@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.expected = exports.repeatTry = exports.combination = exports.factorial = exports.permutation = void 0;
 // 順列を吐き出す関数。(引数は、nPrに対応。)
 const permutation = (n, r) => {
     // nを隔離
@@ -8,9 +10,12 @@ const permutation = (n, r) => {
     }
     return result;
 };
+exports.permutation = permutation;
 const factorial = (n) => permutation(n, n);
+exports.factorial = factorial;
 // 組み合わせを吐き出す関数
 const combination = (n, r) => permutation(n, r) / factorial(r);
+exports.combination = combination;
 // 反復試行の確率を吐き出す関数
 const repeatTry = (piece, hit, probability) => {
     // 反復試行の確率の公式 ⇒ P = nCr(p^n*(1-p)^(n-r))
@@ -21,6 +26,7 @@ const repeatTry = (piece, hit, probability) => {
     const remainder_power_probability = remainder ** (piece - hit);
     return (combination(piece, hit) * power_probability * remainder_power_probability);
 };
+exports.repeatTry = repeatTry;
 // 期待値を吐き出す関数。
 const expected = (probability_variables, probabilities) => {
     // probability_variablesと、probabilitiesの要素数が正常かの判定。
@@ -36,3 +42,4 @@ const expected = (probability_variables, probabilities) => {
     }
     return result;
 };
+exports.expected = expected;

@@ -19,3 +19,5 @@ const geometric = (first: number, second: number, last: number) => {
 
   return terms;
 };
+
+export { arithmetics, geometric };

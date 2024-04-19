@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.analysisXY = exports.analysis = void 0;
 const analysis = (...datas) => {
     let sum = 0; // 初期値
     let distributedSum = 0; //初期値
@@ -17,6 +18,7 @@ const analysis = (...datas) => {
         standard: standard, //データの標準偏差
     };
 };
+exports.analysis = analysis;
 const analysisXY = (...datasXY) => {
     // 合計
     let sumX = 0;
@@ -76,3 +78,4 @@ const analysisXY = (...datasXY) => {
         correlation: correlation,
     };
 };
+exports.analysisXY = analysisXY;

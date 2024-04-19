@@ -48,3 +48,5 @@ const expected = (probability_variables: number[], probabilities: number[]) => {
 
   return result;
 };
+
+export { permutation, factorial, combination, repeatTry, expected };

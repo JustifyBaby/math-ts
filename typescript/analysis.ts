@@ -93,3 +93,5 @@ const analysisXY = (...datasXY: number[][]): AnalysisXY => {
     correlation: correlation,
   };
 };
+
+export { analysis, analysisXY };

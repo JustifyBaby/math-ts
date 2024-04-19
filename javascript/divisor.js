@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Divisor = void 0;
 class Divisor {
     constructor(num) {
         this.num = num;
@@ -130,6 +132,7 @@ class Divisor {
         return (a * b) / gcd;
     }
 }
+exports.Divisor = Divisor;
 const n_arySystemTo10 = (num, n_ary) => {
     if (n_ary <= 1)
         throw new Error("n_ary must be more than 2!!");
